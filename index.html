@@ -51,6 +51,7 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <!-- pgc -->
             <tr onmouseout="pgc_stop()" onmouseover="pgc_start()">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
@@ -100,6 +101,8 @@
                 </p>
               </td>
             </tr>
+
+            <!-- craft -->
             <tr onmouseout="craft_stop()" onmouseover="craft_start()">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
@@ -123,11 +126,11 @@
                 </a>
                 <br>
                 <strong>Michelle Guo*</strong>,
-                Mia Tang,
+                Mia Tang*,
                 Hannah Cha,
                 Ruohan Zhang,
                 C. Karen Liu,
-                Jiajun Wu
+                Jiajun Wu (* equal contribution)
                 <br>
                 <em>WACV</em>, 2025
                 <br>
@@ -140,6 +143,8 @@
                 </p>
               </td>
             </tr>
+
+            <!-- objectadapt -->
             <tr onmouseout="objectadapt_stop()" onmouseover="objectadapt_start()">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
@@ -177,7 +182,47 @@
                 <a href="https://object-adaptation.github.io/">project page</a>
                 <p></p>
                 <p>
-                Jointly learning to design and control 3D-printable object adaptions to expand the set of objects that robots can use.
+                Jointly learning to design and control 3D-printable object adaptions, expanding the set of objects that robots can use.
+                </p>
+              </td>
+            </tr>
+
+            <!-- tooldesign -->
+            <tr onmouseout="tooldesign_stop()" onmouseover="tooldesign_start()">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='tooldesign_image'><video  width=100% height=100% muted autoplay loop>
+                  <source src="images-mg/tooldesign.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images-mg/tooldesign.jpg' width="160">
+                </div>
+                <script type="text/javascript">
+                  function tooldesign_start() {
+                    document.getElementById('tooldesign_image').style.opacity = "1";
+                  }
+
+                  function tooldesign_stop() {
+                    document.getElementById('tooldesign_image').style.opacity = "0";
+                  }
+                  tooldesign_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://robotic-tool-design.github.io/">
+              <span class="papertitle">Learning to Design and Use Tools for Robotic Manipulation</span>
+                </a>
+                <br>
+                Ziang Liu*, Stephen Tian*, <strong>Michelle Guo</strong>, C. Karen Liu, Jiajun Wu (* equal contribution)
+                <br>
+                <em>CoRL</em>, 2023
+                <br>
+                <a href="https://robotic-tool-design.github.io/">project page</a>
+                /
+                <a href="https://arxiv.org/abs/2311.00754">arXiv</a>
+                <p></p>
+                <p>
+                Learning designer and controller policies that allow to robots to rapidly design, prototype, and control tools for goal-conditioned tasks.
                 </p>
               </td>
             </tr>
