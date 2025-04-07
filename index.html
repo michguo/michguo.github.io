@@ -24,6 +24,8 @@
                 </p>
                 <p>
                   I am Michelle, a final-year PhD student in the Computer Science Department at Stanford University, where I am fortunate to be co-advised by <a href="https://jiajunwu.com/">Jiajun Wu</a> and <a href="https://tml.stanford.edu/people/karen-liu">C. Karen Liu</a>.
+                </p>
+                <p>
                   My research is graciously funded by the Meta Research Fellowship and the NSF Graduate Research Fellowship.
                   Previously, I received my BS and MS in Computer Science from Stanford University.
                 </p>
@@ -253,7 +255,7 @@
               <span class="papertitle">Learning Object-Centric Neural Scattering Functions for Free-viewpoint Relighting and Scene Composition</span>
                 </a>
                 <br>
-                Hong-Xing Yu*, Michelle Guo*, Alireza Fathi, Yen-Yu Chang, Eric Ryan Chan, Ruohan Gao, Thomas Funkhouser, Jiajun Wu (* equal contribution)
+                Hong-Xing Yu*, <strong>Michelle Guo*</strong>, Alireza Fathi, Yen-Yu Chang, Eric Ryan Chan, Ruohan Gao, Thomas Funkhouser, Jiajun Wu (* equal contribution)
                 <br>
                 <em>TMLR</em>, 2023
                 <br>
@@ -263,6 +265,47 @@
                 <p></p>
                 <p>
                 Making object-centric NeRFs relightable and scene-composable, for both opaque and translucent objects, by modeling neural scattering functions.
+                </p>
+              </td>
+            </tr>
+
+            <!-- dano -->
+            <tr onmouseout="dano_stop()" onmouseover="dano_start()">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='dano_image'><img src='images-mg/dano.gif' width=100%></div>
+                  <img src='images-mg/dano.jpg' width="160">
+                </div>
+                <script type="text/javascript">
+                  function dano_start() {
+                    document.getElementById('dano_image').style.opacity = "1";
+                  }
+
+                  function dano_stop() {
+                    document.getElementById('dano_image').style.opacity = "0";
+                  }
+                  dano_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2210.09420">
+              <span class="papertitle">Differentiable Physics Simulation of Dynamics-Augmented Neural Objects</span>
+                </a>
+                <br>
+                Simon Le Cleac'h, Hong-Xing Yu, <strong>Michelle Guo</strong>, Taylor A Howell, Ruohan Gao, Jiajun Wu, Zachary Manchester, Mac Schwager
+                <br>
+                <em>RA-L</em>, 2023
+                <br>
+                <a href="https://arxiv.org/abs/2210.09420">arXiv</a>
+                /
+                <a href="https://youtu.be/Md0PM-wv_Xg">video</a>
+                /
+                <a href="https://docs.google.com/presentation/d/14_dLVGmXb5Y0YpDZdI-HyH2D16YB7iIu72HHW8df6Qg/edit?usp=sharing">poster</a>
+                /
+                <a href="https://docs.google.com/presentation/d/1uYU-7K42tEq_cMbQsqF0D9LvJEB9iEd8K-QTd2HC9cY/edit?usp=sharing">slides</a>
+                <p></p>
+                <p>
+                  Making object-centric NeRFs simulation-ready, using a differentiable contact model based on the density field.
                 </p>
               </td>
             </tr>
