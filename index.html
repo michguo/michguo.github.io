@@ -388,6 +388,47 @@
                 </p>
               </td>
             </tr>
+
+            <!-- dash -->
+            <tr onmouseout="dash_stop()" onmouseover="dash_start()">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='dash_image'><img src='images-mg/dash.png' width=100%></div>
+                  <img src='images-mg/dash.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function dash_start() {
+                    document.getElementById('dash_image').style.opacity = "1";
+                  }
+
+                  function dash_stop() {
+                    document.getElementById('dash_image').style.opacity = "0";
+                  }
+                  dash_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2108.12536">
+              <span class="papertitle">DASH: Modularized Human Manipulation Simulation with Vision and Language for Embodied AI</span>
+                </a>
+                <br>
+                Yifeng Jiang, <strong>Michelle Guo</strong>, Jiangshan Li, Ioannis Exarchos, Jiajun Wu, C. Karen Liu
+                <br>
+                <em>SCA</em>, 2021
+                <br>
+                <a href="https://arxiv.org/abs/2108.12536">arXiv</a>
+                /
+                <a href="https://youtu.be/8Th95GdtQ3M">video</a>
+                /
+                <a href="https://drive.google.com/file/d/1t7sU5jCn_zY-TAJu2u1E_p7ZxEFUoXJJ/view?usp=sharing">talk slides</a>
+                /
+                <a href="https://github.com/jyf588/pytorch-rl-bullet">code</a>
+                <p></p>
+                <p>
+                  An embodied virtual human that, given natural language commands, performs grasp-and-stack tasks using its own perception, proprioception, and touch, without requiring human motion data.
+                </p>
+              </td>
+            </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
