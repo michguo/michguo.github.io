@@ -49,6 +49,7 @@
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
+                <p>My work lies in the intersection of computer vision, computer graphics, and robotics.</p>
               </td>
             </tr>
           </tbody></table>
@@ -343,6 +344,47 @@
                 <p></p>
                 <p>
                   Analyzing the capabilities of analytical, learned, and hybrid simulators in reproducing real-world rigid body contact behavior.
+                </p>
+              </td>
+            </tr>
+
+            <!-- dexgrasp -->
+            <tr onmouseout="dexgrasp_stop()" onmouseover="dexgrasp_start()">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='dexgrasp_image'><img src='images-mg/dexgrasp.png' width=100%></div>
+                  <img src='images-mg/dexgrasp.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function dexgrasp_start() {
+                    document.getElementById('dexgrasp_image').style.opacity = "1";
+                  }
+
+                  function dexgrasp_stop() {
+                    document.getElementById('dexgrasp_image').style.opacity = "0";
+                  }
+                  dexgrasp_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2207.00195">
+              <span class="papertitle">Learning Diverse and Physically Feasible Dexterous Grasps with Generative Model and Bilevel Optimization</span>
+                </a>
+                <br>
+                Albert Wu, <strong>Michelle Guo</strong>, C. Karen Liu
+                <br>
+                <em>CoRL</em>, 2022
+                <br>
+                <a href="https://arxiv.org/abs/2207.00195">arXiv</a>
+                /
+                <a href="https://proceedings.mlr.press/v205/wu23b.html">paper</a>
+                /
+                <a href="https://github.com/Stanford-TML/dex_grasp">code</a>
+                /
+                <a href="https://youtu.be/9DTrImbN99I?feature=shared">video</a>
+                <p></p>
+                <p>
+                  Dexterous grasping of diverse objects via a generative model and bilevel optimization to plan diverse, physically feasible grasps in the real world.
                 </p>
               </td>
             </tr>
